@@ -1,0 +1,183 @@
+/*
+-----------------------------------
+------------ HEADER ---------------
+-----------------------------------
+*/
+
+/* ------------ NAVIGATION -------------*/
+
+.header {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.navigation {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 4.8rem;
+  font-size: 1.4rem;
+}
+
+.nav-ul a {
+  color: #343434;
+  border-bottom: 2px solid white;
+  transition: all 0.3s ease-in;
+}
+
+.nav-ul a:hover {
+  border-bottom: 2px solid #dd3939;
+}
+
+.nav-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.nav-btn {
+  height: 3rem;
+  width: 8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  border: 2px solid #343434;
+  color: #343434;
+  transition: all 0.3s;
+  background-color: white;
+}
+
+.sign-in-btn:hover {
+  border: 2px solid #dd3939;
+}
+
+.register-btn {
+  background-color: #dd3939;
+  color: white;
+  transition: all 0.3s;
+}
+
+.register-btn:hover {
+  color: #dd3939;
+  background-color: #f8d7d7;
+}
+
+/* ------------ CTA -------------*/
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  padding: 3.6rem 6.4rem;
+  gap: 2.4rem;
+}
+
+.cta-text-div {
+  display: flex;
+  flex-direction: column;
+  padding: 4.6rem 6rem;
+  gap: 2.4rem;
+}
+
+.cta-p1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343434;
+}
+
+.cta-h1 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: #343434;
+}
+
+.cta-h1 span {
+  color: #dd3939;
+}
+
+.cta-p2 {
+  font-size: 1.6rem;
+  color: #4b4b4b;
+}
+
+.cta-btn-div {
+  display: flex;
+  margin-top: 1.8rem;
+  gap: 1.8rem;
+}
+
+.cta-btn {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 12rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.drive-test-btn {
+  background-color: #dd3939;
+  transition: all 0.3s;
+  border: 2px solid #dd3939;
+}
+
+.drive-test-btn:hover {
+  color: #dd3939;
+  background-color: #f8d7d7;
+  border: 2px solid #dd3939;
+}
+
+.drive-test-btn svg {
+  transition: all 0.3s;
+}
+
+.drive-test-btn:hover svg {
+  stroke: #dd3939;
+}
+
+.learn-more-btn {
+  background-color: #343434;
+  transition: all 0.3s;
+  border: 2px solid #343434;
+}
+
+.learn-more-btn:hover {
+  color: #343434;
+  background-color: white;
+  border: 2px solid #343434;
+}
+
+.learn-more-btn svg {
+  transition: all 0.3s;
+}
+
+.learn-more-btn:hover svg {
+  stroke: #343434;
+}
+
+.cta-car-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-car-img {
+  width: 100%;
+}
