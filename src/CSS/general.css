@@ -13,3 +13,32 @@ html {
 a {
   text-decoration: none;
 }
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 12px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dd3939; /* Color of the scrollbar thumb */
+  border-radius: 6px;
+  height: 40px; /* Adjust the height as needed */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9b2828; /* Color of the scrollbar thumb on hover */
+}
+
+/* Hide the scrollbar track completely */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar buttons (up/down arrows) */
+}

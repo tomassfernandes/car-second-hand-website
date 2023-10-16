@@ -1,7 +1,7 @@
 export default function VehicleModels() {
   return (
     <section className="vehicle-section">
-      <h2>Ald,wld,wldld,w</h2>
+      <h2>Vehicle Models</h2>
       <div className="vehicle-gird">
         <div className="select-vehicle-div">
           <h3>Choose car:</h3>
@@ -14,19 +14,33 @@ export default function VehicleModels() {
           </div>
         </div>
         <div className="vehicle-img-div">
-          <img
-            className="vehicle-img"
-            src="/img/cta-car.webp"
-            alt="Selected car"
-          />
+          <img className="vehicle-img" src="/img/7.webp" alt="Selected car" />
         </div>
         <div className="vehcile-specs-div">
-          <div className="specs">BMW</div>
-          <div className="specs">Price</div>
-          <div className="specs">Fuel Economy</div>
-          <div className="specs">Motor</div>
-          <div className="specs">Transmission</div>
-          <div className="specs">Space</div>
+          <div className="specs">
+            <p>BMW</p>
+            <div className="border"></div>
+          </div>
+          <div className="specs">
+            <p>Price</p>
+            <div className="border"></div>
+          </div>
+          <div className="specs">
+            <p>Fuel Economy</p>
+            <div className="border"></div>
+          </div>
+          <div className="specs">
+            <p>Motor</p>
+            <div className="border"></div>
+          </div>
+          <div className="specs">
+            <p>Transmission</p>
+            <div className="border"></div>
+          </div>
+          <div className="specs">
+            <p>Space</p>
+            <div className="border"></div>
+          </div>
         </div>
       </div>
     </section>
