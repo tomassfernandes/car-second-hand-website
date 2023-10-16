@@ -16,7 +16,7 @@ export default function Header() {
           </p>
           <div className="cta-btn-div">
             <button className="cta-btn drive-test-btn">
-              <p>Drive Test</p>
+              <p>Test Drive</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
