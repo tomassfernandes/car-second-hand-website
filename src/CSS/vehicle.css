@@ -64,6 +64,27 @@
   color: white;
 }
 
+.add-to-cart-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  background-color: #dd3939;
+  border: 2px solid #dd3939;
+  transition: all 0.3s;
+}
+
+.add-to-cart-div:hover {
+  color: #dd3939;
+  background-color: #f8d7d7;
+  border: 2px solid #dd3939;
+}
+
 .vehicle-img-div {
   display: flex;
   justify-content: center;

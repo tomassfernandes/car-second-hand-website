@@ -1,6 +1,7 @@
 export default function VehicleModels() {
   return (
     <section className="vehicle-section">
+      <p className="p">Choose the car that fits you</p>
       <h2 className="heading-secondary">Vehicle Models</h2>
       <div className="vehicle-gird">
         <div className="select-vehicle-div">
@@ -11,6 +12,7 @@ export default function VehicleModels() {
             <div className="car-div">Ferrari</div>
             <div className="car-div">Renault</div>
             <div className="car-div">Mini</div>
+            <div className="add-to-cart-div">Add to cart</div>
           </div>
         </div>
         <div className="vehicle-img-div">

@@ -27,6 +27,7 @@
   list-style: none;
   gap: 4.8rem;
   font-size: 1.4rem;
+  margin-left: 5%;
 }
 
 .nav-ul a {
@@ -74,6 +75,19 @@
 .register-btn:hover {
   color: #dd3939;
   background-color: #f8d7d7;
+}
+
+.shopping-cart-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.shopping-cart-div span {
+  align-self: flex-start;
+  font-size: 1.2rem;
 }
 
 /* ------------ CTA -------------*/
