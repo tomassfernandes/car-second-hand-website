@@ -5,15 +5,9 @@
 */
 
 .vehicle-section {
-  padding: 9.6rem;
-  width: 120rem;
+  padding: 9.6rem 6.4rem;
+  max-width: 120rem;
   margin: 0 auto;
-}
-
-.vehicle-section h2 {
-  font-size: 3.6rem;
-  text-align: center;
-  color: #343434;
 }
 
 .vehicle-gird {

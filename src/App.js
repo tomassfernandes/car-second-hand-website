@@ -1,5 +1,6 @@
 import Header from "./Sections/Header";
 import SectionAbout from "./Sections/SectionAbout";
+import Testimonials from "./Sections/Testimonials";
 import VehicleModels from "./Sections/VehicleModels";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <SectionAbout />
       <VehicleModels />
+      <Testimonials />
     </>
   );
 }

@@ -1,7 +1,7 @@
 export default function VehicleModels() {
   return (
     <section className="vehicle-section">
-      <h2>Vehicle Models</h2>
+      <h2 className="heading-secondary">Vehicle Models</h2>
       <div className="vehicle-gird">
         <div className="select-vehicle-div">
           <h3>Choose car:</h3>
@@ -14,7 +14,11 @@ export default function VehicleModels() {
           </div>
         </div>
         <div className="vehicle-img-div">
-          <img className="vehicle-img" src="/img/7.webp" alt="Selected car" />
+          <img
+            className="vehicle-img"
+            src="/img/car-8.webp"
+            alt="Selected car"
+          />
         </div>
         <div className="vehcile-specs-div">
           <div className="specs">
