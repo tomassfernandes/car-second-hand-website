@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 12rem !important;
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto 2.4rem;
+  gap: 3.6rem;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-div h3 {
+  color: #343434;
+  font-size: 1.4rem;
+}
+
+.footer-div p {
+  color: #4b4b4b;
+  font-size: 1.1rem;
+}
+
+.social-media-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.8rem;
+}
+
+.social-media-img {
+  height: 2.5rem;
+  width: 2.5rem;
+}

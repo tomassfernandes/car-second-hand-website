@@ -22,6 +22,7 @@
 .phone-app-text-div h2 {
   font-size: 3.4rem;
   color: white;
+  width: 60%;
 }
 
 .phone-app-text-div p {
@@ -69,4 +70,8 @@
 .app-p {
   color: #4b4b4b !important;
   font-size: 1.2rem !important;
+}
+
+.app-logo {
+  width: 25%;
 }

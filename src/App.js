@@ -4,6 +4,7 @@ import Testimonials from "./Sections/Testimonials";
 import VehicleModels from "./Sections/VehicleModels";
 import PhoneApp from "./Sections/PhoneApp";
 import Footer from "./Sections/Footer";
+import FAQ from "./Sections/FAQ";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <SectionAbout />
       <VehicleModels />
       <Testimonials />
+      <FAQ />
       <PhoneApp />
       <Footer />
     </>
