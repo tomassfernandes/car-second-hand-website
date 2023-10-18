@@ -5,6 +5,8 @@ import "./CSS/header.css";
 import "./CSS/about.css";
 import "./CSS/vehicle.css";
 import "./CSS/testimonials.css";
+import "./CSS/phoneApp.css";
+import "./CSS/footer.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
