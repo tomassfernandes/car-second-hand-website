@@ -45,6 +45,44 @@ export default function Testimonials() {
       <p className="p">Our clients opinion</p>
       <h2 className="heading-secondary">Testimonials</h2>
 
+      <div className="swiper-div">
+        <Swiper {...swiperSettings}>
+          {testimonailsEl.map((el, index) => (
+            <SwiperSlide key={el.name + index}>
+              <div className="testimonials-grid">
+                <div className="testimonials-div testimonial-border">
+                  <img
+                    className="testimonial-img"
+                    src={el.photo}
+                    alt={el.name + " profile image"}
+                  />
+                  <p>{el.name}</p>
+                </div>
+                <div className="testimonials-div">
+                  <p>{el.review}</p>
+
+                  <div className="stars-div">
+                    {[1, 2, 3, 4, 5].map((index) => (
+                      <img
+                        key={index}
+                        className="star-img"
+                        src={
+                          el.rating >= index
+                            ? "/svg/yellow star.png"
+                            : "/svg/star-outline.png"
+                        }
+                        alt={
+                          el.rating >= index ? "Yellow star" : "Star outline"
+                        }
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
       <div className="testimonials-draw-div">
         <img
           className="draw-img"
@@ -52,40 +90,6 @@ export default function Testimonials() {
           alt="City in the background draw"
         />
       </div>
-      <Swiper {...swiperSettings}>
-        {testimonailsEl.map((el, index) => (
-          <SwiperSlide key={el.name + index}>
-            <div className="testimonials-grid">
-              <div className="testimonials-div testimonial-border">
-                <img
-                  className="testimonial-img"
-                  src={el.photo}
-                  alt={el.name + " profile image"}
-                />
-                <p>{el.name}</p>
-              </div>
-              <div className="testimonials-div">
-                <p>{el.review}</p>
-
-                <div className="stars-div">
-                  {[1, 2, 3, 4, 5].map((index) => (
-                    <img
-                      key={index}
-                      className="star-img"
-                      src={
-                        el.rating >= index
-                          ? "/svg/yellow star.png"
-                          : "/svg/star-outline.png"
-                      }
-                      alt={el.rating >= index ? "Yellow star" : "Star outline"}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
     </section>
   );
 }
