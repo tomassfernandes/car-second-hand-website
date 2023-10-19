@@ -43,8 +43,18 @@ export default function Footer() {
       </div>
       <div className="footer-div">
         <h3>Trust and Security</h3>
-        <p>From 8am - 7pm</p>
-        <p>car_saver_support@eample.com</p>
+        <div className="security-img-div">
+          <img
+            className="security-img"
+            src="/svg/security-1.png"
+            alt="security aproved"
+          />
+          <img
+            className="security-img"
+            src="/svg/security-2.png"
+            alt="security aproved"
+          />
+        </div>
       </div>
     </footer>
   );

@@ -1,10 +1,11 @@
 .footer {
-  margin-top: 12rem !important;
+  margin-top: 15rem !important;
   display: flex;
-  max-width: 120rem;
+  max-width: 110rem;
   margin: 0 auto 2.4rem;
   padding-top: 4.2rem;
   gap: 3.6rem;
+  border-top: 2px solid #dd3939;
 }
 
 .footer-div {
@@ -31,6 +32,23 @@
 }
 
 .social-media-img {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.social-media-img:hover {
+  filter: opacity(50%);
+}
+
+.security-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.security-img {
+  width: 2.2rem;
+  height: 2.2rem;
 }
