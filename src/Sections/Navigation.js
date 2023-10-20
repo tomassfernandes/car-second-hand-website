@@ -1,19 +1,40 @@
+import { Link } from "react-scroll";
+
 export default function Navigation() {
   return (
     <div className="navigation">
       <img className="logo" src="/img/logo.jpg" alt="Company Logo"></img>
       <ul className="nav-ul">
         <li>
-          <a href="#">About</a>
+          <Link to="section-about" spy={true} smooth={true} duration={500}>
+            <a href="section-about">About</a>
+          </Link>
         </li>
         <li>
-          <a href="#">Vehicle Models</a>
+          <Link
+            to="section-vehicle-models"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={30}
+          >
+            <a href="section-vehicle-models">Vehicle Models</a>
+          </Link>
         </li>
         <li>
-          <a href="#">Testimonials</a>
+          <Link
+            to="section-testimonials"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <a href="section-testimonials">Testimonials</a>
+          </Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to="section-contact" spy={true} smooth={true} duration={500}>
+            <a href="section-contact">Contact</a>
+          </Link>
         </li>
       </ul>
       <div className="nav-btn-div">

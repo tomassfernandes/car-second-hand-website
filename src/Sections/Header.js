@@ -1,4 +1,6 @@
 import Navigation from "./Navigation";
+import { Link } from "react-scroll";
+
 export default function Header() {
   return (
     <header className="header">
@@ -33,24 +35,32 @@ export default function Header() {
               </svg>
             </button>
 
-            <button className="cta-btn learn-more-btn">
-              <p>Learn More</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-arrow-down"
-              >
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            </button>
+            <Link
+              to="section-vehicle-models"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={30}
+            >
+              <button className="cta-btn learn-more-btn">
+                <p>Browse Cars</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-arrow-down"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="cta-car-div">
