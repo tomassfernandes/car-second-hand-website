@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Element } from "react-scroll";
+import { FadeLoader } from "react-spinners";
 
 export default function VehicleModelsEl() {
   const car1 = {
@@ -58,13 +59,25 @@ export default function VehicleModelsEl() {
   };
 
   const [isSelected, setIsSelected] = useState(false);
-
   const [selectedCar, setSelectedCar] = useState(car1);
+  const [isLoading, setIsLoading] = useState(false);
 
   function selectionClick(carDetails) {
+    setIsLoading(true);
     setIsSelected(true);
     setSelectedCar(carDetails);
   }
+
+  // Use useEffect to reset isLoading when the image has loaded
+  useEffect(() => {
+    if (selectedCar) {
+      const img = new Image();
+      img.src = selectedCar.img;
+      img.onload = () => {
+        setIsLoading(false); // Set isLoading to false when the image has loaded
+      };
+    }
+  }, [selectedCar]);
 
   return (
     <Element name="section-vehicle-models">
@@ -94,11 +107,15 @@ export default function VehicleModelsEl() {
             </div>
           </div>
           <div className="vehicle-img-div">
-            <img
-              className="vehicle-img"
-              src={selectedCar ? selectedCar.img : null}
-              alt="Selected car"
-            />
+            {isLoading ? ( // Conditionally render the loading spinner
+              <FadeLoader size={50} color={"#dd3939"} loading={isLoading} />
+            ) : (
+              <img
+                className="vehicle-img"
+                src={selectedCar ? selectedCar.img : null}
+                alt="Selected car"
+              />
+            )}
           </div>
           <div className="vehcile-specs-div">
             <div className="specs">
