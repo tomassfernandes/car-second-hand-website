@@ -42,26 +42,17 @@
   transition: color 0.4s;
 }
 
-.car-div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: #dd3939;
-  transition: left 0.8s;
-  z-index: -1;
-}
-
-.car-div:hover::before {
-  left: 0;
-  z-index: -1;
-}
-
-.car-div:hover {
-  background: transparent;
-  color: white;
+.car-selected {
+  width: 60%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.078);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #dd3939; /* Set the background color */
+  color: white; /* Set the text color to white */
+  transition: background-color 0.4s, color 0.4s; /* Add a transition for smooth effect */
 }
 
 .add-to-cart-div {
@@ -99,7 +90,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
-  width: 70%;
+  width: 80%;
   margin-right: 0;
   margin-left: auto;
   padding: 1rem;
@@ -107,13 +98,26 @@
 }
 
 .specs {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: #dd393920;
+  border-radius: 5px;
+}
+
+.specs p {
   font-size: 1.2rem;
 }
 
+.specs img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
 .border {
-  height: 2px;
-  width: 30%;
+  height: 1.5rem;
+  width: 0.2rem;
   background-color: #dd3939;
-  margin-top: 0.1rem;
+  margin-right: 2.4rem;
+  margin-left: 2.4rem;
 }
