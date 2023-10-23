@@ -17,6 +17,9 @@ import "./CSS/testimonials.css";
 import "./CSS/phoneApp.css";
 import "./CSS/footer.css";
 import "./CSS/faq.css";
+
+import "./CSS/media-queries/queries.css";
+
 import App from "./App";
 
 register();

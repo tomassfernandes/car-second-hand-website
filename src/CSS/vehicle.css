@@ -59,8 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35%;
-  padding: 1rem;
+  width: fit-content;
+  padding: 1rem 1.8rem;
   font-size: 1.6rem;
   cursor: pointer;
   color: white;
@@ -68,12 +68,18 @@
   background-color: #dd3939;
   border: 2px solid #dd3939;
   transition: all 0.3s;
+  gap: 0.8rem;
 }
 
 .add-to-cart-div:hover {
   color: #dd3939;
   background-color: #f8d7d7;
   border: 2px solid #dd3939;
+}
+
+.add-to-cart-div svg {
+  width: 2rem;
+  height: 2rem;
 }
 
 .vehicle-img-div {
@@ -103,6 +109,10 @@
   padding: 0.8rem;
   background-color: #dd393920;
   border-radius: 5px;
+}
+
+.specs-bold {
+  font-weight: 700;
 }
 
 .specs p {

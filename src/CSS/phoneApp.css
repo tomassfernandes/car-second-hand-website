@@ -11,6 +11,7 @@
   display: flex;
   position: relative;
   padding: 4.8rem;
+  margin: 0 auto;
 }
 
 .phone-app-text-div {

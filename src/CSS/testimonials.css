@@ -40,6 +40,10 @@
   line-height: 2.2rem;
 }
 
+.testimonials-profile-p {
+  text-align: center;
+}
+
 .stars-div {
   display: flex;
   align-items: center;

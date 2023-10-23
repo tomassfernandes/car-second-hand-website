@@ -58,7 +58,7 @@ export default function Testimonials() {
                       src={el.photo}
                       alt={el.name + " profile image"}
                     />
-                    <p>{el.name}</p>
+                    <p className="testimonials-profile-p">{el.name}</p>
                   </div>
                   <div className="testimonials-div">
                     <p>{el.review}</p>
