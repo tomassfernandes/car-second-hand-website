@@ -41,6 +41,39 @@
   ------------- VEHICLE SECTION---------------
   --------------------------------------------*/
 
+  .vehicle-section {
+    padding: 9.6rem 0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .vehicle-gird {
+    grid-template-columns: 1fr;
+  }
+
+  .choose-car-div {
+    width: 50%;
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    align-self: auto;
+  }
+
+  .car-div {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .car-selected {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
   .vehicle-gird {
     grid-template-columns: 100%;
   }
@@ -52,25 +85,22 @@
     justify-content: center;
   }
 
-  .car-div {
-    width: 100%;
-  }
-
-  .car-selected {
-    width: 100%;
-  }
-
   .vehicle-img {
     width: 50%;
   }
 
   .vehcile-specs-div {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 
   .specs {
+    width: 100%;
     justify-content: center;
+  }
+
+  .specs p {
+    font-size: 1.6rem;
   }
 
   /*-----------------------------------------
@@ -111,4 +141,85 @@
 }
 
 @media (max-width: 51em) {
+  header .nav-btn-menu {
+    display: flex;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    background-color: #dd3939;
+    transition: 1s;
+    transform: translateY(-100vh);
+    z-index: 99;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+  }
+
+  .nav-ul a {
+    color: white;
+    border-bottom: none;
+    transition: 0.3s;
+  }
+
+  .nav-ul a:hover {
+    border-bottom: none;
+    color: rgba(198, 198, 198, 0.648);
+  }
+
+  /*-----------------------------------------
+  ------------- VEHICLE SECTION---------------
+  --------------------------------------------*/
+
+  .vehicle-section {
+    padding: 9.6rem 0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .vehicle-gird {
+    grid-template-columns: 1fr;
+  }
+
+  .choose-car-div {
+    width: 50%;
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    align-self: auto;
+  }
+
+  .car-div {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .car-selected {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }

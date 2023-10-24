@@ -76,6 +76,15 @@
   background-color: #f8d7d7;
 }
 
+header .nav-btn-menu {
+  height: 4rem;
+  width: 4rem;
+  background: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
 /* ------------ CTA -------------*/
 
 .cta-grid {
