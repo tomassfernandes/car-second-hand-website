@@ -222,3 +222,27 @@
     font-size: 1.8rem;
   }
 }
+/*-----------------------------------------
+  ------------- FOOTER SECTION---------------
+  --------------------------------------------*/
+
+@media (max-width: 29em) {
+  .footer-main-div {
+    width: 100%;
+    margin: 0 auto 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.6rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+}

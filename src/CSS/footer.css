@@ -12,6 +12,7 @@
   margin: 0 auto 2.4rem;
   display: flex;
   gap: 3.6rem;
+  flex-wrap: wrap;
 }
 
 .footer-div {
