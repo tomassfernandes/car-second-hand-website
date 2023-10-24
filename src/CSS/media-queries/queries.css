@@ -147,7 +147,7 @@
 
   header nav {
     position: fixed;
-    top: 0;
+    top: -100%;
     right: 0;
     height: 100%;
     width: 60%;
@@ -157,12 +157,11 @@
     gap: 1.8rem;
     background-color: #dd3939;
     transition: 1s;
-    transform: translateY(-100vh);
     z-index: 99;
   }
 
   header .responsive_nav {
-    transform: none;
+    top: 0;
   }
 
   nav .nav-close-btn {
